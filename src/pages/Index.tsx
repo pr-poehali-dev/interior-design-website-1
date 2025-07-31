@@ -40,9 +40,11 @@ const Index = () => {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-300 rounded-lg overflow-hidden shadow-2xl">
-                <div className="w-full h-full bg-charcoal/10 flex items-center justify-center">
-                  <Icon name="Home" size={80} className="text-elegant-gold/60" />
-                </div>
+                <img 
+                  src="/img/fbd25738-3a38-4037-926c-3c138c419162.jpg" 
+                  alt="Elena Romanova - Дизайнер интерьеров"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-elegant-gold/20 rounded-full blur-xl"></div>
             </div>
@@ -167,25 +169,63 @@ const Index = () => {
               </div>
             </Card>
             
-            {[4, 5, 6].map((item) => (
-              <Card key={item} className="group cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
-                <div className="aspect-[4/3] bg-gradient-to-br from-stone-200 to-stone-300 overflow-hidden">
-                  <div className="w-full h-full bg-charcoal/10 flex items-center justify-center group-hover:bg-charcoal/20 transition-colors">
-                    <Icon name="Image" size={48} className="text-elegant-gold/60" />
-                  </div>
+            <Card className="group cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
+              <div className="aspect-[4/3] bg-gradient-to-br from-stone-200 to-stone-300 overflow-hidden">
+                <img 
+                  src="/img/299ae272-3db8-4a1e-b74c-9b7d59693f5f.jpg" 
+                  alt="Роскошная ванная комната"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-serif text-charcoal mb-2">Спа-ванная комната</h3>
+                <p className="text-charcoal/70 text-sm mb-4">
+                  Роскошное пространство с мраморной отделкой и атмосферой релаксации.
+                </p>
+                <div className="flex items-center text-elegant-gold text-sm font-medium">
+                  Подробнее
+                  <Icon name="ArrowRight" size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-serif text-charcoal mb-2">Проект {item}</h3>
-                  <p className="text-charcoal/70 text-sm mb-4">
-                    Элегантный интерьер с изысканными деталями и продуманной функциональностью.
-                  </p>
-                  <div className="flex items-center text-elegant-gold text-sm font-medium">
-                    Подробнее
-                    <Icon name="ArrowRight" size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                  </div>
+              </div>
+            </Card>
+            
+            <Card className="group cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
+              <div className="aspect-[4/3] bg-gradient-to-br from-stone-200 to-stone-300 overflow-hidden">
+                <img 
+                  src="/img/5008ab52-55d4-4695-a1d5-3a45d749b61b.jpg" 
+                  alt="Элегантная столовая"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-serif text-charcoal mb-2">Изысканная столовая</h3>
+                <p className="text-charcoal/70 text-sm mb-4">
+                  Торжественное пространство для семейных ужинов с изысканным декором.
+                </p>
+                <div className="flex items-center text-elegant-gold text-sm font-medium">
+                  Подробнее
+                  <Icon name="ArrowRight" size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Card>
-            ))}
+              </div>
+            </Card>
+            
+            <Card className="group cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
+              <div className="aspect-[4/3] bg-gradient-to-br from-stone-200 to-stone-300 overflow-hidden">
+                <div className="w-full h-full bg-charcoal/10 flex items-center justify-center group-hover:bg-charcoal/20 transition-colors">
+                  <Icon name="Image" size={48} className="text-elegant-gold/60" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-serif text-charcoal mb-2">Следующий проект</h3>
+                <p className="text-charcoal/70 text-sm mb-4">
+                  Скоро здесь появится новый проект из нашего портфолио.
+                </p>
+                <div className="flex items-center text-elegant-gold text-sm font-medium">
+                  Подробнее
+                  <Icon name="ArrowRight" size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Card>
           </div>
           <div className="text-center mt-12">
             <Button variant="outline" className="border-elegant-gold text-elegant-gold hover:bg-elegant-gold hover:text-charcoal px-8 py-3 rounded-full transition-all duration-300">
